@@ -442,6 +442,14 @@ function clearAuthForm() {
     $('#loginPassword').val('');
 }
 
+//背景色の変更
+function btnClick(e){
+    $("body").css("background-color","black");
+    $("h1").css("color","white");
+    $("h2").css("color","white");
+        
+}
+
 // UI更新
 // 　バグ入りなので要修正（emailアドレスを表示するべきところを uid を表示してしまっている）
 function updateUI(user) {
@@ -504,6 +512,10 @@ $(function() {
 
     // 投稿一覧の初期読み込み
     loadPosts();
+
+    $('.btn-backgroundcolor').click(function(e) {
+            btnClick(e);
+        });
 });
 
 // クリーンアップ処理
@@ -518,6 +530,7 @@ window.addEventListener('unload', function() {
 <body>
     <div class="container">
         <h1>掲示板アプリ</h1>
+        <button class="btn-backgroundcolor">ダークモード</button>
         
         <!-- メッセージ表示エリア -->
         <div id="messageArea"></div>

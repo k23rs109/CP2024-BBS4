@@ -148,6 +148,15 @@ textarea.form-control {
 .btn-danger:hover {
     background-color: #c82333;
 }
+.btn-backgroundcolor{
+    background-color:lavender ;
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
 
 /* 投稿一覧 */
 .posts-container {
